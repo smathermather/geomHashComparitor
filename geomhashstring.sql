@@ -8,3 +8,10 @@ WITH unionT AS (
 SELECT STRING_AGG(hash, ',') FROM geohash;
  
 $$ LANGUAGE SQL;
+
+/*example usage:
+WITH unioned AS (
+	SELECT ST_Union(geom) AS geom FROM royalview)
+SELECT geohashstring(geom) FROM unioned
+
+-- returns e.g. "dpmfftpydjn7fshmd616,dpmfftpydrb38qu2334f,dpmf (...)"
