@@ -10,8 +10,7 @@ From the postgis docs:
 
 In short, this approach is conceptually similar to rasterizing the vector geometries and comparing the resultant rasters pixel by pixel to find differences, and doing that at multiple resolutions.
 
-This will require the use of pg_trgm.  To install pg_trgm, simply run:
+This will require the use of pg_trgm.  To install pg_trgm, simply run the following against your database:
 ```SQL
 CREATE EXTENSION pg_trgm;
 ```
-Against your database.
