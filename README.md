@@ -17,6 +17,7 @@ This will require the use of pg_trgm.  To install pg_trgm, simply run the follow
 CREATE EXTENSION pg_trgm;
 ```
 
+
 And now we can use _similarity_ in conjunction with our new function:
 ```SQL
 WITH sim01 AS (
